@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //setStyleSheet("background-color:white;");
+    setAutoFillBackground( true );
 }
 
 MainWindow::~MainWindow()
