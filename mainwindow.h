@@ -17,5 +17,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+private slots:
+    void readDataAndCalc();
+    void calculateSor(double** a, double* b, int n, double w) ;
+    double calculateEroor(double** a, int n);
+    void on_calcBtn_clicked();
 };
 #endif // MAINWINDOW_H

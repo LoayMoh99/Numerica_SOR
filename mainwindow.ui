@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>715</width>
-    <height>334</height>
+    <width>730</width>
+    <height>419</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -23,7 +23,7 @@
    <enum>Qt::ToolButtonTextOnly</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="x1">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -46,11 +46,11 @@
      <string>Matrix of Linear Equations:</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="SolvingMethodCB">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>20</y>
+      <x>190</x>
+      <y>310</y>
       <width>131</width>
       <height>22</height>
      </rect>
@@ -66,14 +66,27 @@
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="calcBtn">
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>170</y>
+      <y>120</y>
       <width>141</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#C0C0C0;
+	border: 1px solid blue;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color:#A9A9A9;
+	border: 1px solid black;
+	padding: 5px;
+}</string>
     </property>
     <property name="text">
      <string>CALCULATE!!</string>
@@ -88,11 +101,11 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="StopCriteriaCB">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>90</y>
+      <x>550</x>
+      <y>30</y>
       <width>131</width>
       <height>22</height>
      </rect>
@@ -111,8 +124,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>10</y>
+      <x>60</x>
+      <y>300</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -124,8 +137,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>80</y>
+      <x>420</x>
+      <y>20</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -137,8 +150,8 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>40</y>
+      <x>60</x>
+      <y>330</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -147,21 +160,21 @@
      <string>w (in case of SOR) :</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_4">
+   <widget class="QTextEdit" name="w">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>50</y>
+      <x>190</x>
+      <y>340</y>
       <width>81</width>
       <height>31</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_5">
+   <widget class="QTextEdit" name="i">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>120</y>
+      <x>550</x>
+      <y>60</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -170,8 +183,8 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>120</y>
+      <x>420</x>
+      <y>60</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -183,8 +196,8 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>140</y>
+      <x>420</x>
+      <y>80</y>
       <width>121</width>
       <height>21</height>
      </rect>
@@ -193,7 +206,7 @@
      <string>or Stopping Error in % :</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_6">
+   <widget class="QTextEdit" name="y1">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -203,7 +216,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_7">
+   <widget class="QTextEdit" name="z1">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -213,7 +226,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_8">
+   <widget class="QTextEdit" name="z2">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -223,7 +236,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_9">
+   <widget class="QTextEdit" name="y2">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -233,7 +246,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="x2">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -243,7 +256,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_10">
+   <widget class="QTextEdit" name="z3">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -253,7 +266,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_11">
+   <widget class="QTextEdit" name="y3">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -263,7 +276,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_3">
+   <widget class="QTextEdit" name="x3">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -312,7 +325,7 @@
      <string>3rd Eq.</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_15">
+   <widget class="QTextEdit" name="b1">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -322,7 +335,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_16">
+   <widget class="QTextEdit" name="b3">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -332,7 +345,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_17">
+   <widget class="QTextEdit" name="b2">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -370,7 +383,7 @@
       <x>370</x>
       <y>10</y>
       <width>31</width>
-      <height>291</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -399,7 +412,7 @@
      <string>Initial Vector:</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_14">
+   <widget class="QTextEdit" name="xi">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -409,7 +422,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_12">
+   <widget class="QTextEdit" name="zi">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -419,7 +432,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_13">
+   <widget class="QTextEdit" name="yi">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -445,51 +458,38 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+   <widget class="QTextEdit" name="errorTB">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>230</y>
-      <width>71</width>
-      <height>31</height>
+      <x>450</x>
+      <y>340</y>
+      <width>81</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Solution:</string>
+     <string>Relative Error=</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_18">
+   <widget class="QTextEdit" name="relError">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>230</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_19">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>230</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_20">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>230</y>
-      <width>51</width>
+      <x>530</x>
+      <y>340</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -500,31 +500,43 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>270</y>
-      <width>71</width>
-      <height>31</height>
+      <x>620</x>
+      <y>340</y>
+      <width>31</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Relative Error:</string>
+     <string>%</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_21">
+   <widget class="QTextEdit" name="solution">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>270</y>
-      <width>51</width>
-      <height>31</height>
+      <x>460</x>
+      <y>210</y>
+      <width>211</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>190</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Solutions:</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
