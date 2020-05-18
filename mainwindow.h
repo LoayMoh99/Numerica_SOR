@@ -21,6 +21,9 @@ private slots:
     void readDataAndCalc();
     void calculateSor(double** a, double* b, int n, double w) ;
     double calculateEroor(double** a, int n);
+    double*& chooseAndSwap(double**&numb,int y,int &o);
+    void reArrangeArray(double**&a,double *&b, int n);
+    void calculateGaussSeidel(double** a, double* b, int n);
     void on_calcBtn_clicked();
 };
 #endif // MAINWINDOW_H
