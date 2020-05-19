@@ -25,5 +25,7 @@ private slots:
     void reArrangeArray(double**&a,double *&b, int n);
     void calculateGaussSeidel(double** a, double* b, int n);
     void on_calcBtn_clicked();
+    void calculateSorStpError(double** a, double* b,double e ,double w);
+    void calculateGaussSeidalStpErr(double** a, double* b,double e );
 };
 #endif // MAINWINDOW_H

@@ -10,6 +10,82 @@
     <height>419</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>730</width>
+    <height>419</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>730</width>
+    <height>419</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="acceptDrops">
    <bool>true</bool>
   </property>
@@ -67,13 +143,14 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-color:#C0C0C0;
+	font: 75 11pt &quot;Arial&quot;;
+	background-color:#ff3346;
 	border: 1px solid blue;
 	padding: 5px;
 }
 
 QPushButton:pressed{
-	background-color:#A9A9A9;
+	background-color:#AAAAAA;
 	border: 1px solid black;
 	padding: 5px;
 }</string>
@@ -99,6 +176,9 @@ QPushButton:pressed{
       <width>131</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
     <item>
      <property name="text">
@@ -243,7 +323,7 @@ QPushButton:pressed{
       <x>370</x>
       <y>10</y>
       <width>31</width>
-      <height>371</height>
+      <height>361</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -291,9 +371,9 @@ QPushButton:pressed{
    <widget class="QTextEdit" name="errorTB">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>390</y>
-      <width>731</width>
+      <x>10</x>
+      <y>380</y>
+      <width>711</width>
       <height>31</height>
      </rect>
     </property>
